@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Budget tracker</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+	<header class="header">
+      <div class="container">
+        <div class="header-content">
+          <h2 class="header-text">Available Budget in <span>May</span> 2019</h2>
+          <h1 class="header-budget">0</h1>
+          <div class="budget-block budget-block--income">
+            <span class="budget-block-text">income</span>
+            <span class="budget-block-value">+ 0</span>
+          </div>
+          <div class="budget-block budget-block--expense">
+            <span class="budget-block-text">expenses</span>
+            <div>
+              <span class="budget-block-value">- 0</span>
+              <span class="budget-block-percent">0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="manage-budget">
+        <div class="container">
+          <div class="manage-budget-content">
+            <select id="selector" class="dropdown">
+              <option value="inc">Income</option>
+              <option value="exp">Expenses</option>
+            </select>
+            <input
+              id="input-description"
+              type="text"
+              placeholder="Add description"
+              class="input input--description"
+              value=""
+            />
+            <input
+              id="input-value"
+              type="text"
+              placeholder="Value"
+              class="input input--value"
+              value=""
+            />
+            <button id="btn-submit" type="button" class="btn btn-submit">
+              &#10004;
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="statistics">
+        <div id="stat-content" class="statistics-content">
+          <div class="statistics-box">
+            <h2 class="statistics-header statistics-header--income">Income:</h2>
+            <ul id="incomes-list" class="statistics-list"></ul>
+          </div>
+          <div class="statistics-box">
+            <h2 class="statistics-header statistics-header--expense">Expenses:</h2>
+            <ul id="expenses-list" class="statistics-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>

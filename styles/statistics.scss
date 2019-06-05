@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+
+.statistics {
+  padding: 13px 0;
+}
+
+.statistics-content {
+  display: flex;
+  justify-content: center;
+}
+
+.statistics-box {
+  padding: 16px;
+  margin: 0 10px;
+  min-height: 300px;
+  width: 45%;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 4px;
+}
+
+.statistics-header {
+  font-size: 30px;
+  margin-bottom: 15px;
+
+  &--income {
+    color: $mint;
+  }
+
+  &--expense {
+    color: $purple;
+  }
+}
+
+.statistics-list {
+  font-size: 25px;
+}
+
+.income-item, .expense-item {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $lightgray;
+}
+.span-description {
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+.span-value {
+  padding-left: 30px;
+  padding-bottom: 10px;
+  max-width: 300px;
+}
+
+.btn-delete {
+  margin-left: 10px;
+  padding: 15px 17px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+
+  &:hover {
+    border: none;
+    background-color: blueviolet;
+    color: black;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+}
+
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
